@@ -1,0 +1,11 @@
+*.pyc
+.DS_Store
+.coverage
+.python-version
+.tox
+AUTHORS
+ChangeLog
+build
+fib.egg-info
+htmlcov
+pbr-0.8.2-py2.7.egg

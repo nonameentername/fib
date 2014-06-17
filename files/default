@@ -1,0 +1,15 @@
+server {
+
+     listen   80;
+     charset utf-8;
+     root /var/www/fib;
+     server_name localhost;
+
+location / {
+     include uwsgi_params;
+     uwsgi_pass unix:/tmp/uwsgi.fib.socket;
+     uwsgi_param UWSGI_PYHOME /var/www/fib/env;
+     uwsgi_param UWSGI_CHIDIR /var/www/fib;
+     uwsgi_param UWSGI_SCRIPT fib.api.app:application;
+     }
+}

@@ -1,0 +1,5 @@
+WebTest==2.0.15
+coverage==3.7.1
+discover==0.4.0
+flake8==2.1.0
+testtools==0.9.35
